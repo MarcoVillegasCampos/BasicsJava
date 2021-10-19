@@ -1,5 +1,4 @@
-
-
+import java.util.ArrayList;
 
 public class BasicJavaTest {
 	public static void main(String[] args) {
@@ -34,6 +33,8 @@ public class BasicJavaTest {
 			System.out.println(val);
 	}
 
+
+	
 	public static int FindMax(int[] array) {
 		int maxNum = Integer.MIN_VALUE;
 		for(int val: array){
@@ -41,6 +42,14 @@ public class BasicJavaTest {
 				maxNum = val;
 		}
 		return maxNum;
+	}
+	public static ArrayList<Integer>ArrayWithOdd() {
+		ArrayList<Integer> y = new ArrayList<Integer>();
+		for(int i = 0; i <= 255; i++) {
+			if(i % 2 != 0)
+				y.add(i);
+		}
+		return y;
 	}
 
 	public static double GetAverage(int[] array) {
